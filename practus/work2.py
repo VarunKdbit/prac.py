@@ -31,3 +31,22 @@ marks_sheet = {
     "GRADE" : "A",
 }
 print(marks_sheet)
+
+#program 4 :
+
+data ={
+    "NAME" : input("enter the name "),
+    "MARKS" : {
+        "m1" : input("enter the sub1 marks "),
+        "m2" : input("enter the sub2 marks "),
+    },
+    "GRADE" : input("enter the grade obtained ")
+}
+print(data) 
+data["MARKS"]["m2"] = 91
+print(data)
+data["YEAR"] = 2026
+print(data)
+print(data.keys())
+print(data.values())
+print(data.items())
