@@ -50,3 +50,6 @@ print(data)
 print(data.keys())
 print(data.values())
 print(data.items())
+
+#program 4:
+
