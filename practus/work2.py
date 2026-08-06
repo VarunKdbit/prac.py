@@ -73,3 +73,19 @@ for i in text:
         l+=1
 print("count of upper char in the text is :",u)
 print("count of lower char in the text is :",l)
+
+#program 6
+
+n=int(input("enter the number:"))
+a=0
+b=1
+print("fibonacci series for the entered number is : ")
+print(a)
+print(b)
+for i in range(n-2):
+    c=a+b
+    print(c)
+    a=b
+    b=c
+print("end of program ")
+
