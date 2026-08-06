@@ -53,3 +53,23 @@ print(data.items())
 
 #program 4:
 
+nums=[13,45,6,4,15,7]
+n=len(nums)
+t=10
+for i in range (0,n):
+    for j in range (i,n) :
+        if nums[i]+nums[j]==t :
+            print(i,j)
+
+#program 5
+
+text = input("enter the text")
+u=0
+l=0
+for i in text:
+    if i.isupper():
+        u+=1
+    elif i.islower():
+        l+=1
+print("count of upper char in the text is :",u)
+print("count of lower char in the text is :",l)
