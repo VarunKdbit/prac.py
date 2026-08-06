@@ -89,3 +89,42 @@ for i in range(n-2):
     b=c
 print("end of program ")
 
+# PROGRAM 7
+
+#method 1
+n=int(input("enter the number : "))
+if(n<2):
+    print("not prime")
+    exit()
+for i in range (2,n):
+    if(n%i==0):
+        print("not prime")
+        exit()
+print("prime")
+
+#method 2
+n=int(input("enter the number : "))
+prime =True
+if n<2 :
+    prime = False
+else:
+    for i in range(2,n):
+        if(n%i==0):
+            prime= False
+            break
+if prime:
+    print("Prime")
+else :
+    print("NotPrime")
+    
+#method 3
+n=int(input("enter the number :"))
+if(n<2):
+    print("not prime")
+else :
+    for i in range (2,n):
+        if(n%i==0):
+            print("not prime")
+            break
+    else:
+        print("prime")
