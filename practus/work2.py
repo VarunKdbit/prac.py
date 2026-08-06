@@ -128,3 +128,14 @@ else :
             break
     else:
         print("prime")
+
+#program 8
+
+n=int(input("enter the number : "))
+fact=1
+i=1
+while i<=n:
+    fact*=i
+    i+=1
+print("factorial of given number is :",fact)
+
