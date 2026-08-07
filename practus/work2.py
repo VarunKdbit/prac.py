@@ -139,3 +139,15 @@ while i<=n:
     i+=1
 print("factorial of given number is :",fact)
 
+#program 9
+
+def even(n):
+    if(n<=1):
+        return 
+    if(n%2==0):
+        print(n)
+    even(n-1)
+#recursion basic
+n=int(input("enter the element"))
+print(even(n))
+
