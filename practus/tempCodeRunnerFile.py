@@ -1,7 +1,9 @@
-nums=[13,45,6,4,15,7]
-n=len(nums)
-t=10
-for i in range (0,n):
-    for j in range (i,n) :
-        if nums[i]+nums[j]==t :
-            print(i,j)
+num=int(input("enter the number : "))
+if(num<2):
+    print("not prime")
+    exit()
+for i in range (2,num):
+    if(num%i==0):
+        print("not prime")
+        exit()
+print("prime")
