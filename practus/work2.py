@@ -158,4 +158,16 @@ def fact(n):
 n=int(input("enter the value of n : "))
 print(fact(n))
 
+#recursive sum of n numbers
+
+def c(n):
+    if n<=1:
+        return n
+    else :
+        return n+c(n-1)
+n=int(input("enter the num : "))
+
+print(c(n))
+
+
 
