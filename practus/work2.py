@@ -92,12 +92,12 @@ print("end of program ")
 # PROGRAM 7
 
 #method 1
-n=int(input("enter the number : "))
-if(n<2):
+num=int(input("enter the number : "))
+if(num<2):
     print("not prime")
     exit()
-for i in range (2,n):
-    if(n%i==0):
+for i in range (2,num):
+    if(num%i==0):
         print("not prime")
         exit()
 print("prime")
@@ -147,7 +147,15 @@ def even(n):
     if(n%2==0):
         print(n)
     even(n-1)
-#recursion basic
-n=int(input("enter the element"))
-print(even(n))
+#recursion factorial 
+
+def fact(n):
+    if n==0 or n==1 :
+        return 1
+    else :
+        return n*fact(n-1)
+    
+n=int(input("enter the value of n : "))
+print(fact(n))
+
 

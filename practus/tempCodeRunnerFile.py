@@ -1,9 +1,8 @@
-num=int(input("enter the number : "))
-if(num<2):
-    print("not prime")
-    exit()
-for i in range (2,num):
-    if(num%i==0):
-        print("not prime")
-        exit()
-print("prime")
+def pr(n):
+    
+    if(n==0):
+        return
+    print(n)
+    pr(n-1)
+n=int(input("enter the number : "))
+print(pr(n))
