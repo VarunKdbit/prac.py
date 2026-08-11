@@ -1,8 +1,4 @@
-def pr(n):
-    
-    if(n==0):
-        return
-    print(n)
-    pr(n-1)
-n=int(input("enter the number : "))
-print(pr(n))
+with open(r"C:\Users\Varun\OneDrive\Desktop\pracpro\practus\demo.txt","a+") as f :
+    data=f.write("\n I like to build LLM and AI agents ")
+    f.seek(0)
+    print(f.read())
