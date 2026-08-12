@@ -1,3 +1,0 @@
-HI everyone
- We are learning file i/o 
- using python

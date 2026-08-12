@@ -25,3 +25,11 @@ with open(r"C:\Users\Varun\OneDrive\Desktop\pracpro\practus\demo.txt","a+") as f
 import os
 os.remove(r"C:\Users\Varun\OneDrive\Desktop\pracpro\practus\demo.txt")
 
+#replacing particular string by another using file handling
+
+with open(r"C:\Users\Varun\OneDrive\Desktop\pracpro\par.txt","r+") as G :
+    data = G.read()
+    G.write(data.replace("python","Java"))
+    G.seek(0)
+    print(G.read())
+
