@@ -34,7 +34,6 @@ s1 =Student("varun",[6.7,5.9,6.0,8.4])
 s1.avg()
 
 #program 3 (with using decorator )
-
 class Student :
     
     def __init__(self,name,marks) :
@@ -79,5 +78,32 @@ class Bank :
     def check_balance(self):
         return self.balance
 
+#INHERITANCE
 
+#program 5
+class Car :
+
+    @staticmethod 
+    def start() :
+        print("Car has started.....")
+
+    @staticmethod
+    def stop() :
+        print("Car has stopped")
+
+    
+class Toyota(Car) :
+
+    def __init__(self,name,model) :
+        self.name = name
+        self.model = model
+
+car1 = Toyota("Fortuner",2017)
+print(car1.name,car1.model)
+car1.start()
+car1.stop()
+car2 = Toyota("Vellfire",2023)
+print(car2.name,car2.model)
+car2.start()
+car2.stop()
 
