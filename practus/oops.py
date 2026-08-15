@@ -107,3 +107,29 @@ print(car2.name,car2.model)
 car2.start()
 car2.stop()
 
+# multi-level inheritance
+
+class Animal :
+    @staticmethod
+    def eat() :
+        print("eats")
+
+class Dog(Animal) :
+    
+    def bark(self) :
+        print(self.name,"barks")
+
+class Pup(Dog) :
+
+    def __init__(self,name) :
+        self.name = name
+
+    def play(self) :
+        print(self.name,"plays")
+
+D1 = Pup("charlie")
+D1.bark()
+D1.eat()
+D1.play()
+
+
