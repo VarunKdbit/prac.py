@@ -132,4 +132,28 @@ D1.bark()
 D1.eat()
 D1.play()
 
+#program 6 (multiple inheritance)
+class Soulreaper() :
+    @staticmethod
+    def spiritualpressure() :
+        print("Has Reitsu")
+
+    def zanpakto(self) :
+        print(self.name,"has a shikai")
+class Hollow() :
+    @staticmethod
+    def regeneration() :
+        print("can regenerate")
+
+    def Mask(self):
+        print(self.name,"has Hollow mask abilities")
+class Visords(Soulreaper,Hollow) :
+
+    def __init__(self,name) :
+        self.name = name 
+
+p1 = Visords("Shinji Hirako")
+p1.zanpakto()
+p1.Mask()
+
 
