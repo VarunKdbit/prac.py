@@ -80,7 +80,7 @@ class Bank :
 
 #INHERITANCE
 
-#program 5
+#program 5(single level inheritance)
 class Car :
 
     @staticmethod 
