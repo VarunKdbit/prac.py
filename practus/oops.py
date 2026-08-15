@@ -51,12 +51,33 @@ class Student :
         for i in self.marks :
             sum+=i
         avg=sum/4
-        print("Hi",self.name,"your avg marks is :",avg)
+        print(self.name,"your avg marks is :",avg)
 
 
 s1 =Student("varun",[6.7,5.9,6.0,8.4])
 s1.hello()
 s1.avg()
+
+#program 4
+class Bank :
+
+    def __init__(self,name,acc_no,bal) :
+        self.name = name
+        self.account_number = acc_no
+        self.balance = bal
+
+    def debit(self,amount) :
+        self.balance-=amount
+        print("Hi",self.name,"Rs.",amount,"was debited to your account")
+        print("available net total balance is",self.check_balance())
+
+    def credit(self,amount) :
+        self.balance+=amount
+        print("Hi",self.name,"Rs.",amount,"was credited to your account")
+        print("available net total balance is",self.check_balance())
+
+    def check_balance(self):
+        return self.balance
 
 
 
