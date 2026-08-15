@@ -136,7 +136,7 @@ D1.play()
 class Soulreaper() :
     @staticmethod
     def spiritualpressure() :
-        print("Has Reitsu")
+        print("Reitsu")
 
     def zanpakto(self) :
         print(self.name,"has a shikai")
