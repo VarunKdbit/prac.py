@@ -194,3 +194,20 @@ s1 = Student
 s1.change_name("DBIT")
 print(Student.name)
 print(s1.name)
+
+#property method
+# it is used to access methods like a attribute
+class Result :
+
+    def __init__(self,AI,CN,LLM,ADA) :
+        self.AI = AI
+        self.CN = CN
+        self.LLM = LLM
+        self.ADA = ADA
+
+    @property 
+    def percentage(self) :
+        print(str(((self.AI + self.CN + self.LLM + self.ADA)/400)*100 ) +"%" )
+
+s1 = Result(75,70,80,70)
+s1.percentage
