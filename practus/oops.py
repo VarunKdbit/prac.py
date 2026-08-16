@@ -156,4 +156,29 @@ p1 = Visords("Shinji Hirako")
 p1.zanpakto()
 p1.Mask()
 
+#super() method 
+# it is used to access method of parent class
+class Car :
 
+    def ty(self,type) :
+        self.type = type 
+        
+    @staticmethod
+    def start() :
+        print("car starts")
+
+    @staticmethod
+    def stop() :
+        print("car stops")
+
+class Toyota(Car) :
+    def __init__(self,name,type) :
+        super().ty(type)
+        self.name=name
+
+car1 = Toyota("Fortuner","Petrol")
+print(car1.name)
+print(car1.type)
+
+
+    
