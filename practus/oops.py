@@ -181,4 +181,16 @@ print(car1.name)
 print(car1.type)
 
 
-    
+#class method 
+#it bounds to  the class rather than a specific object and it can access or modify class attributes
+class Student :
+    name = "Anonymous"
+
+    @classmethod
+    def change_name(cls,name) :
+        cls.name = name
+
+s1 = Student
+s1.change_name("DBIT")
+print(Student.name)
+print(s1.name)
