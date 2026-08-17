@@ -271,6 +271,22 @@ class Engineer(Employee) :
 emp1 = Engineer("VARUN K",21,"PYTHON BACKEND","AIML","3700000")
 emp1.show_details()
 
+# practise problem 4
+#polymorphism concept
+class Order :
 
+    def __init__(self,item,price) :
+        self.item = item
+        self.price = price
+
+    def __gt__(self,ord2):
+        return self.price > ord2.price
+
+ord1 = Order("Monster Drink",120)
+ord2 = Order("Icecream",60)
+
+print(ord1 > ord2)
+
+    
 
 
