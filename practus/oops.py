@@ -273,6 +273,7 @@ emp1.show_details()
 
 # practise problem 4
 #polymorphism concept
+#they can change meaning of the operator as wanted inside the class
 class Order :
 
     def __init__(self,item,price) :
