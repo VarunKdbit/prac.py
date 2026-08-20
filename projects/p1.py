@@ -1,4 +1,4 @@
-print("welcome program begins!!!")
+print("Welcome program begins!!!")
 m1=int(input("enter the number of marks scored in sub 1"))
 m2=int(input("enter the number of marks scored in sub 2"))
 m3=int(input("enter the number of marks scored in sub 3"))
@@ -20,6 +20,6 @@ elif(perc>35):
     print("PASS")
 else :
     print("FAIL")
-print("end of program")
+print("End of program")
 
 
